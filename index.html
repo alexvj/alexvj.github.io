@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Juego de la vida</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Test</h1>
+    <h1>Juego de la vida con HTML5, CSS3 y JavaScript</h1>
+    <canvas width="2048" height="1536"></canvas>
+
+    <div class="botonera">
+        <button onclick="limpiarTablero()">Limpiar</button>
+        <button onclick="siguientePaso()">Un paso</button>
+        <button id="botonAuto" onclick="activarAuto()">Automático</button>
+    </div>
+
+    <script src="scripts.js"></script>
+
+    <div>Copyright &copy; Alexander Vega Jiménez. Bajo licencia GPLv3+. <a href="https://github.com/alexvj/juego-de-la-vida">Ver en GitHub.</a></div>
 </body>
 </html>
